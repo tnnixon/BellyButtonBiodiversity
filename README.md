@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/tnnixon/BellyButtonBiodiversity/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tnnixon/BellyButtonBiodiversity/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<h1>Belly Button Biodiversity Dashboard</h1>
+<br><br>
+<b>Dashboard:</b> [link]
+<br><br>
+In this project, I built an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+<br>
+<br>
+1. Used the D3 library to read in samples.json.
+<br>
+<br>
+2. Created a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+<br>
+• Used sample_values as the values for the bar chart.<br>
+• Used otu_ids as the labels for the bar chart.<br>
+• Used otu_labels as the hovertext for the chart.<br>
+<br>
+<br>
+3. Created a bubble chart that displays each sample.
+<br>
+• Used otu_ids for the x values.<br>
+• Used sample_values for the y values.<br>
+• Used sample_values for the marker size.<br>
+• Used otu_ids for the marker colors.<br>
+• Used otu_labels for the text values.<br>
+<br>
+<br>
+4. Displayed the sample metadata, i.e., an individual's demographic information.
+<br>
+<br>
+5. Displayed each key-value pair from the metadata JSON object somewhere on the page.
+<br>
+<br>
+6. Updated all of the plots any time that a new sample is selected.
+<br><br>
+<b>References</b><br>
+Hulcr, J. et al.(2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
